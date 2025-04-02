@@ -35,7 +35,7 @@ If designed as a service rather than a library:
 
 ## Time Spent
 
-Approximately 2–3 hours were spent on this exercise, including planning, coding, and preparing the documentation.
+Approximately 90 minutes were spent on this exercise, including planning, coding, and preparing the documentation.
 
 ## Feedback on the Exercise
 

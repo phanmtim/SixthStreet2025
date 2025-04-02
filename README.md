@@ -9,16 +9,18 @@ SixthStreet2025 provides simple functionality for:
 - **min(symbol, n):** Determine the lowest price (low) over the last `n` trading days for a given stock symbol.
 - **max(symbol, n):** Determine the highest price (high) over the last `n` trading days for a given stock symbol.
 
-This library leverages the [Alpha Vantage API](https://www.alphavantage.co/documentation/#daily) to fetch historical daily stock data. A free API key is required to use the API (e.g., `93ZUW8JTV8Z6Q9VW`).
+This library leverages the [Alpha Vantage API](https://www.alphavantage.co/documentation/#daily) to fetch historical daily stock data. A free API key is required to use the API.
 
 ## Project Structure
 
+```
 SixthStreet2025/ 
 ├── alphavantage_client.py # Main library module with API interaction and utility functions 
 ├── example.py # Example usage of the library 
 ├── README.md # Project documentation (this file) 
 ├── setup.py # Setup script for installation 
 └── DISCUSSION.md # Detailed discussion of design decisions and implementation notes
+```
 
 ## Installation
 
@@ -29,4 +31,5 @@ SixthStreet2025/
    cd SixthStreet2025
 
 2. **Install Packages**
+   ```bash
    pip install .
