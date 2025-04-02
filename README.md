@@ -1,14 +1,32 @@
 # SixthStreet2025
 
-This Python library provides functionality to fetch and process stock quotes from the Alpha Vantage API. It offers the following functions:
+A Python library for fetching and processing stock quotes from the Alpha Vantage API using the TIME_SERIES_DAILY endpoint.
 
-- **lookup(symbol, date)**: Returns the open, high, low, close, and volume for a given symbol on a specified date.
-- **min(symbol, n)**: Returns the lowest price (low) for the last `n` trading days.
-- **max(symbol, n)**: Returns the highest price (high) for the last `n` trading days.
+## Overview
+
+SixthStreet2025 provides simple functionality for:
+- **lookup(symbol, date):** Retrieve the open, high, low, close, and volume for a given stock symbol on a specific date.
+- **min(symbol, n):** Determine the lowest price (low) over the last `n` trading days for a given stock symbol.
+- **max(symbol, n):** Determine the highest price (high) over the last `n` trading days for a given stock symbol.
+
+This library leverages the [Alpha Vantage API](https://www.alphavantage.co/documentation/#daily) to fetch historical daily stock data. A free API key is required to use the API (e.g., `93ZUW8JTV8Z6Q9VW`).
+
+## Project Structure
+
+SixthStreet2025/ 
+├── alphavantage_client.py # Main library module with API interaction and utility functions 
+├── example.py # Example usage of the library 
+├── README.md # Project documentation (this file) 
+├── setup.py # Setup script for installation 
+└── DISCUSSION.md # Detailed discussion of design decisions and implementation notes
 
 ## Installation
 
-1. Clone the repository:
+1. **Clone the Repository:**
+
    ```bash
    git clone https://github.com/yourusername/SixthStreet2025.git
    cd SixthStreet2025
+
+2. **Install Packages**
+   pip install .
